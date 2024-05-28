@@ -5,9 +5,19 @@
     <title>MW Games</title>
 </head>
 <body>
-Minwoo's Game Page
+<h1>Minwoo's Game Page</h1>
 
-<button onclick="location.href='games/minesweeper/index.html'">Open Minesweeper</button>
-<button onclick="location.href='games/2048/index.html'">Open 2048</button>
+<button id="minesweeperButton">Open Minesweeper</button><br/>
+<button id="2048Button">Open 2048</button>
+
+<script>
+    document.getElementById('minesweeperButton').addEventListener('click', function () {
+        window.location = '/games/minesweeper/game.html';
+    });
+
+    document.getElementById('2048Button').addEventListener('click', function () {
+        window.location = '/games/2048/game.html';
+    });
+</script>
 </body>
 </html>
